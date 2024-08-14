@@ -10,6 +10,8 @@ CREATE TABLE Personal
   City VARCHAR(15) NOT NULL DEFAULT "Agra"
   );
 
+-- Inserting 1st record
+
 Insert INTO Personal VALUES
 (1,"Ram Kumar",19,"M","12345","Agra");
 
