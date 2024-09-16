@@ -1,4 +1,5 @@
-Exercise_1  --  Create a table Personal
+Exercise1  --  Create a table Personal
                 Perform Operations(create,insert,select)
-Exercise_2  --  Create another table Personal
+Exercise2  --  Create another table Personal
                 Perform Constraints(NOT NULL,CHECK,UNIQUE,DEFAULT)
+Exercise3  --  Select with Where clause
