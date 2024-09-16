@@ -1,29 +1,29 @@
 -- Create table
 
-CREATE TABLE Personal
+CREATE TABLE personal
   (
-  Id INT,
-  Name VARCHAR(50),
-  Gender VARCHAR(1),
-  Phone_Number VARCHAR(12),
-  DOB DATE
+  id INT,
+  name VARCHAR(50),
+  gender VARCHAR(1),
+  phone VARCHAR(12),
+  dob DATE
   );
 
 -- Insert record-1
 
-INSERT INTO Personal(Id,Name,Gender,Phone_Number,DOB)
+INSERT INTO personal(id,name,gender,phone,dob)
 VALUES(1,"RaviKumar","M","9494989796",'1989-05-04');
 
 -- Retrieve data
 
-select * from Personal;
+select * from personal;
 
 -- Insert multiple records
 
-Insert INTO Personal VALUES
+Insert INTO personal VALUES
 (2,"SalmanKhan","M","9348932784","1978-12-30"),
 (3,"Preethi","F","8293847569","1967-5-3");
 
 -- Retrieve data
 
-select * from Personal;
+select * from personal;
