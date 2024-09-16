@@ -1,0 +1,21 @@
+-- command to display all columns data
+SELECT * FROM personal;
+-- command to display particular columns data
+SELECT id,name,phone FROM personal;
+-- command to rename the column names and display
+SELECT id AS Id,name AS Student,phone AS Phone FROM personal;
+-- command to write 2 words in the alias name
+SELECT id AS Id,name AS "Student Name",phone AS Phone FROM personal;
+
+-- to show condition based data we use where clause
+/* WHERE comparision operators
+=,>,<,>=,<=,<> or !=(Not equal),BETWEEN,LIKE,IN */
+
+-- command to select all columns with records gender=female
+SELECT * FROM personal WHERE gender="F";
+-- command to select records with age lessthan 20
+SELECT * FROM personal WHERE age < 20;
+-- command to select records whose city is not agra
+SELECT * FROM personal WHERE city != "Agra";
+-- command to display particular columns data whose whose city is not agra
+SELECT id,name FROM personal WHERE city <> "Agra";
