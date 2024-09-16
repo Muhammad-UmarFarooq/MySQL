@@ -22,9 +22,13 @@ select * from Personal;
 
 -- Default is not working here
 -- Insert INTO Personal VALUES
--- (2,"Sarita",19,"M","123456");
+-- (2,"Sarita",19,"F","123456");
 
 -- Error bcz CHECK constraint is violated here
 -- Insert INTO Personal VALUES
--- (2,"Sarita",17,"M","1234567","Agra");
+-- (2,"Sarita",17,"F","1234567","Agra");
 
+--if we wrire syntax of inserting in this way
+-- Insert INTO Personal(Id,Name,Age,Gender,PhoneNumber) VAlUES
+-- (3,"Harika",18,"F","1234567");
+--then default is working
