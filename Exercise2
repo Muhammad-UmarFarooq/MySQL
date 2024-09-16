@@ -1,0 +1,34 @@
+-- Create table
+
+CREATE TABLE personal
+  (
+  id INT NOT NULL UNIQUE,
+  name VARCHAR(50) NOT NULL,
+  age INT NOT NULL CHECK (age >= 18),
+  gender VARCHAR(1) NULL,
+  phone VARCHAR(12) NOT NULL UNIQUE,
+  city VARCHAR(15) NOT NULL DEFAULT "Agra"
+  );
+
+-- Inserting 1st record
+Insert INTO personal VALUES
+(1,"Ram Kumar",19,"M","12345","Agra");
+select * from personal;
+
+-- By default it is taking NOTNULL here i.e. if u dont specify any rowvalue it gives error
+-- Its showing error bcz the phone should be UNIQUE
+-- Insert INTO personal VALUES
+-- (2,"Sarita",19,"M","12345","Agra");
+
+-- Default is not working here
+-- Insert INTO personal VALUES
+-- (2,"Sarita",19,"F","123456");
+
+-- Error bcz CHECK constraint is violated here
+-- Insert INTO personal VALUES
+-- (2,"Sarita",17,"F","1234567","Agra");
+
+--if we wrire syntax of inserting in this way
+-- Insert INTO personal(id,name,age,gender,phone) VAlUES
+-- (3,"Harika",18,"F","1234567");
+--then default is working
