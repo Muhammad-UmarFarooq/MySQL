@@ -1,7 +1,30 @@
 --numeric functions 
 --nextleep.com
---abs
+--abs()
 select abs(-36.6);
---round
+--round()
 select round(-35.6443,2);
 select round(-35.6443)
+--ceil() or ceiling()
+--ceiling not working
+select ceil(35.6);
+--floor()
+select floor(35.6);
+--mod()
+--not working
+select mod(11,3);
+--power()
+select power(4,3);
+--sqrt()
+select sqrt(25);
+--greatest()
+--its not working
+select greatest(20,2,43,32);
+--it returns the salary column bcz salary is > id
+select greatest(id,salary) from employees;
+--least()
+--not working
+--it returns the id column bcz ids are < salary
+select least (id , salary)from employees;
+--rand()
+select rand();
