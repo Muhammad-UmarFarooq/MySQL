@@ -1,4 +1,6 @@
--- table from programmiz sql online editor[Customers,Orders]
+/*
+count(),sum(),avg(),min(),max()
+table from programmiz sql online editor[Customers,Orders]*/
 --count()
 select count(distinct country) from Customers;
 select count(*) from Customers;
@@ -7,6 +9,20 @@ select count(item) from Orders;
 select count (distinct item)from Orders;
 --alias o/p column name
 select count (distinct item) as total_items from Orders;
---sum
+--sum()
 select sum(amount) from Orders ;
 select sum(amount)as keyboardamount from Orders where item='Keyboard';
+--avg()
+select avg(order_id+amount) from Orders;
+select avg(amount)as avg_amount from Orders;
+select avg(order_id)from Orders;
+--min()
+select min(amount)from Orders;
+select min(first_name)from Customers;
+select min(age) from Customers;
+select min(order_id) from Orders;
+--max()
+select max(age)from Customers  where first_name="John" ;
+select max(first_name)from Customers;
+select max(age) from Customers;
+select max(order_id) from Orders;
