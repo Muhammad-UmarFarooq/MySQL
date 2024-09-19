@@ -1,0 +1,12 @@
+-- table from programmiz sql online editor[Customers,Orders]
+--count()
+select count(distinct country) from Customers;
+select count(*) from Customers;
+select count(country)from Customers;
+select count(item) from Orders;
+select count (distinct item)from Orders;
+--alias o/p column name
+select count (distinct item) as total_items from Orders;
+--sum
+select sum(amount) from Orders ;
+select sum(amount)as keyboardamount from Orders where item='Keyboard';
