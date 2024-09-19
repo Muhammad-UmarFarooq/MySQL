@@ -7,4 +7,17 @@ SELECT salary,concat_ws('_',id,name,designation)as concat_string from employees;
 --length()
 select length("MDumAR");
 select id,name,length(name)as name_length from employees;
---upper or ucase
+--ucase and lcase not working
+--upper() or ucase()
+select upper("md.umar farooq");
+--lower() or lcase()
+select id,lower(name) from employees;
+select id,lower(name)as result from employees;
+--replace()
+select replace("xyz.com","com",'in')as link;
+--here by using doublequotes query is not working i.e. "MANAGER","manager" and both should have same quotes
+select id,name,replace(designation,'MANAGER','manager')as position from employees;
+--reverse()
+select id,reverse(name)as result from employees;
+--substring() or substr()
+select id,name,substring(hired_on,1,4)as result from employees;
