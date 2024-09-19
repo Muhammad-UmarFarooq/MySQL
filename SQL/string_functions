@@ -21,3 +21,7 @@ select id,name,replace(designation,'MANAGER','manager')as position from employee
 select id,reverse(name)as result from employees;
 --substring() or substr()
 select id,name,substring(hired_on,1,4)as result from employees;
+--trim
+select trim( "      hello     ")AS result ;
+select rtrim("    hello      ");
+select ltrim( "      hello     ")AS result ;
