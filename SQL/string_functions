@@ -1,0 +1,10 @@
+--nextleap online editor / employees table
+--concat()
+SELECT id,  concat(name," has id- ",id) from employees;
+SELECT salary,concat(name," has id- ",id)as emp_code from employees;
+--concat_ws()
+SELECT salary,concat_ws('_',id,name,designation)as concat_string from employees;
+--length()
+select length("MDumAR");
+select id,name,length(name)as name_length from employees;
+--upper or ucase
