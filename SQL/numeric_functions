@@ -1,1 +1,7 @@
-
+--numeric functions 
+--nextleep.com
+--abs
+select abs(-36.6);
+--round
+select round(-35.6443,2);
+select round(-35.6443)
