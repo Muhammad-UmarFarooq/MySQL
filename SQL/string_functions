@@ -21,7 +21,21 @@ select id,name,replace(designation,'MANAGER','manager')as position from employee
 select id,reverse(name)as result from employees;
 --substring() or substr()
 select id,name,substring(hired_on,1,4)as result from employees;
---trim
+--trim() 
+--NOT WORKING
 select trim( "      hello     ")AS result ;
+--right trim
 select rtrim("    hello      ");
+--left trim
 select ltrim( "      hello     ")AS result ;
+--character trim
+SELECT TRIM('#'  FROM  '#umar#')AS result;
+--leading trim
+SELECT TRIM(LEADING "1"  FROM  "1umar1") AS   result;
+--trailing trim
+SELECT TRIM(TRAILING "1"  FROM  "1umar1") AS   result;
+--another syntax
+select LTRIM("#" , "#umar#") result;
+--left() and right()
+select id, left (designation,2) as  result from employees;
+select id, right (designation,2) as  result from employees;
