@@ -1,3 +1,15 @@
 --nextleap
 --cast
 select salary,cast (salary as decimal)as new_salary from employees;
+--convert
+--not working
+select convert (salary,decimal) from employees;
+--not working
+select convert('hello' USING 'latin1')as converted_string;
+--str_to_date
+--not working both
+select str_to_date('8th june 2023','%D %M %Y')as new_date;--2023-06-08
+--if we change month to number then we have to change the month format
+select str_to_date('8th 06 2023','%D %m %Y')as new_date;
+--date_format
+select id,name,date_format(hired_on,'%D %b %Y')as new_dob from employees;
