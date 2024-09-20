@@ -28,3 +28,6 @@ select greatest(id,salary) from employees;
 select least (id , salary)from employees;
 --rand()
 select rand();
+--sign
+select sign(-12);
+
