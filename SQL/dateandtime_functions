@@ -1,0 +1,35 @@
+--nextleap.com 
+--current_date
+--below syntax not working
+--select current_date();
+  select current_date;
+--current_time
+  SELECT CURRENT_TIME;
+--current_timestamp
+  SELECT CURRENT_TIMEstamp;
+--date
+  SELECT date( CURRENT_TIMEstamp);
+--time
+  SELECT time( CURRENT_TIMESTAMP);
+--year,month,day
+--not working
+SELECT YEAR( CURRENT_TIMESTAMP);
+SELECT MONTH( CURRENT_TIMESTAMP);
+SELECT DAY( CURRENT_TIMESTAMP);
+--hour,minute,second
+SELECT HOUR( CURRENT_TIMESTAMP);
+SELECT MINUTE( CURRENT_TIMESTAMP);
+SELECT SECOND( CURRENT_TIMESTAMP);
+--extract
+--not working
+SELECT id,name ,extract( day from hired_on) as hired_day from employees;
+--datediff()
+--not working
+select datediff('2023-06-05','2023-06-01') as difference;
+--timediff()
+select timediff('2023-06-01 10:30:00','2023-06-01 10:15:00') as difference;
+--date_add()
+select id,name ,date_add(hired_on, interval 1 month)as updated_hired_table from employees;
+--date_sub()
+select id,name ,date_sub(hired_on, interval 3 year)as updated_hired_table from employees;
+--date_format
