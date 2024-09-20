@@ -1,6 +1,32 @@
 --programmiz
 --and
+select * from Customers where first_name='John' and age=31;
 select * from Orders where amount>300 and item='Keyboard'or'mouse';
 --or
-select * from Orders where amount>300 or item='Keyboard'or'Mouse';
+select * from Customers where first_name='John' or age=31;
 --not
+select * from Orders where not customer_id=4;
+select * from Orders where not amount<=300;
+--and and not
+--its giving diff o/p when we are replacing 'Keyboard' and 'Mouse'
+select * from Orders where amount>300 or item='Keyboard'or'Mouse';
+--this syntax is giving correct o/p
+select * from Orders where amount>300 and item='Keyboard'or'Mouse';
+select * from Orders where amount>300 and (item='Mouse' or item="Keyboard");
+select * from Orders where not item="Keyboard" and not item="Mouse";
+
+
+--between
+-- in place of and if we write or it gives syntax error
+select customer_id,first_name from Customers where customer_id between 2 and 4;
+--here it wont include 'J' so to include it we have to specify 'K' inplace of 'J' 
+select * from Customers where first_name between 'D' and 'J';
+--between using not
+select * from Customers where first_name not between 'D' and 'J';
+--in 
+select order_id,item,amount from Orders where item in('Keyboard',"Mousepad");
+select * from Customers where customer_id in(1,4,5);
+--in using not
+select * from Customers where customer_id not in(1,4,5);
+--like
+
