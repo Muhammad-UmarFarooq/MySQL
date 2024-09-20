@@ -33,3 +33,7 @@ select id,name ,date_add(hired_on, interval 1 month)as updated_hired_table from 
 --date_sub()
 select id,name ,date_sub(hired_on, interval 3 year)as updated_hired_table from employees;
 --date_format
+select id,name ,date_format(hired_on ,'%D %b %Y')as new_hired_table from employees;
+--19th May 1997
+select date_format('2023-05-20 10:30:02','%h:%i %p')as formatted_time;
+--10 30 AM for 10:30 AM we added : manually
