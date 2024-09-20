@@ -1,0 +1,3 @@
+--nextleap
+--cast
+select salary,cast (salary as decimal)as new_salary from employees;
