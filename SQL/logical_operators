@@ -1,0 +1,6 @@
+--programmiz
+--and
+select * from Orders where amount>300 and item='Keyboard'or'mouse';
+--or
+select * from Orders where amount>300 or item='Keyboard'or'Mouse';
+--not
