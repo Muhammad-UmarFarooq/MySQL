@@ -1,0 +1,25 @@
+--programmiz
+--(+)
+select age+customer_id as sum from Customers;
+select 10+20 as sum ;
+--(-)
+select age-customer_id as difference from Customers;
+select 10-20 as difference ;
+--(*)
+select age*customer_id as result from Customers;
+select 10*20 as result;
+--(/)
+select age/customer_id as result from Customers;
+select customer_id/age as result from Customers;
+select 10/20 as result;
+select 20/10 as result;
+--(%)
+select age%customer_id as result from Customers;
+select customer_id%age as result from Customers;
+select 10%20 as result;
+select 20%10 as result;
+--power()
+select power(age,customer_id)from Customers;
+select power(10,2);
+
+
