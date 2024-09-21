@@ -34,3 +34,24 @@ select first_name,customer_id from Customers where first_name like "__b%";
 select * from Shippings where status like"p_n%"
 --like using not
 select * from Shippings where status not like"p_n%";
+
+
+--any
+--exa from gfg 
+SELECT DISTINCT CategoryID
+FROM Products 
+WHERE ProductID = ANY (SELECT ProductID 
+                       FROM OrderDetails);
+--all
+--exa from gfg
+SELECT ProductName 
+FROM Products
+WHERE ProductID = ALL (SELECT ProductId
+                       FROM OrderDetails
+                       WHERE Quantity = 6 OR Quantity = 2);
+--exists
+SELECT fname, lname 
+FROM Customers 
+WHERE EXISTS (SELECT * 
+              FROM Orders 
+              WHERE Customers.customer_id = Orders.c_id);
