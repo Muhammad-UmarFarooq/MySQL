@@ -1,0 +1,20 @@
+--union
+select * from Orders
+union 
+select * from Orders;
+--unionall
+select * from Orders
+union all
+select * from Orders;
+--difference
+--in some db except or minus
+select * from Orders
+except
+select * from Orders;
+--intersection
+select * from Orders
+intersect
+select * from Orders;
+select * from Orders where order_id>3
+intersect
+select * from Orders;
