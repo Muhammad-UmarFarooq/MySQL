@@ -29,4 +29,8 @@ select * from Customers where customer_id in(1,4,5);
 --in using not
 select * from Customers where customer_id not in(1,4,5);
 --like
-
+select * from Customers where last_name like "%O%";
+select first_name,customer_id from Customers where first_name like "__b%";
+select * from Shippings where status like"p_n%"
+--like using not
+select * from Shippings where status not like"p_n%";
