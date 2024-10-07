@@ -1,0 +1,26 @@
+1)
+create table employee(
+  id int(6),
+  name varchar(10)not null,
+  address varchar(20),
+  primary key(id)
+  //pk with multiple fields
+  //primary key(id,name)
+  //below syntax also works
+  // name varchar(10) primary key
+  );
+
+2)
+  insert into employee values (1,'shalini','mumbai');
+3)
+  insert into employee values (1,'ram','delhi');
+  //it shows error
+  //Error: UNIQUE constraint failed: employee.id
+4)if pk is multiple field
+   insert into employee values (1,'shalini','mumbai');
+   insert into employee values (1,'ram','mumbai');
+   //no error bcz name is different
+   insert into employee values (1,'ram','mumbai');
+   //it shows error bcz both id and name are same
+   //Violation of PRIMARY KEY constraint 'PK__employee__853DFACEF95039B9'. Cannot insert duplicate key in object 'dbo.employee'. The duplicate key value is (1, ram).
+The statement has been terminated.
