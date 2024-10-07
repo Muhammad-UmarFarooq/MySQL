@@ -55,3 +55,10 @@ FROM Customers
 WHERE EXISTS (SELECT * 
               FROM Orders 
               WHERE Customers.customer_id = Orders.c_id);
+-- some
+--exa from gfg
+select name
+from instructor
+where Salary > some(select Salary
+from instructor
+where dept='Computer Science');
