@@ -1,0 +1,4 @@
+//sub query
+//1)
+select * from Orders where amount in(select amount from Orders where amount>400);
+//2)
