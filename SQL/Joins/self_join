@@ -1,0 +1,6 @@
+--cross join
+--programiz
+--1)
+select * from Shippings s1 join Shippings s2 ;
+--2)
+select o1.item from Orders o1 join Orders o2 on o1.order_id = o2.customer_id ;
