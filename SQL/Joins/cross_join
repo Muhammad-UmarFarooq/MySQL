@@ -1,0 +1,3 @@
+--cross join
+--programiz
+select * from Customers cross join Orders;
