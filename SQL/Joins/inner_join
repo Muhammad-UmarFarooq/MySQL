@@ -7,3 +7,5 @@ select item,amount,age,first_name from Orders inner join Customers on Orders.ord
 3)
 select item,amount,age,first_name from Orders inner join Customers on Orders.order_id=Customers.customer_id where item != 'Mouse';
 4)
+4)select item,amount,age,first_name from Orders join Customers on Orders.order_id=Customers.customer_id where item != 'Mouse';
+
