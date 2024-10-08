@@ -1,0 +1,9 @@
+--inner join
+--programmiz online compiler
+--1)
+select item,amount from Orders inner join Customers on Orders.order_id=Customers.customer_id;
+--2)
+select item,amount,age,first_name from Orders inner join Customers on Orders.order_id=Customers.customer_id;
+3)
+select item,amount,age,first_name from Orders inner join Customers on Orders.order_id=Customers.customer_id where item != 'Mouse';
+4)
