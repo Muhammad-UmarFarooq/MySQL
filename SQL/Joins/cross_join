@@ -1,3 +1,6 @@
 --cross join
 --programiz
+--1)
 select * from Customers cross join Orders;
+--2)
+select * from Customers cross join Orders cross join Shippings;
