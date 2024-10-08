@@ -1,0 +1,4 @@
+--left join
+--programiz online compiler
+--1)
+select order_id,item,shipping_id,status from Orders left join Shippings on customer_id=customer;
