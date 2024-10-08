@@ -1,0 +1,4 @@
+--natural join
+--programiz online compiler 
+--1)
+select * from Customers natural join Orders;
